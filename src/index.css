@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding: 100px 0 0 0;
+  font-family: sans-serif;
+}
+
+.site-logo {
+  background: url('./assets/icons/site_logo.svg') no-repeat center center / 100%;
+  width: 100px;
+  height: 70px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 30px;
+  z-index: 2;
+  background-size: contain;
+}
+
+@keyframes fave-heart {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -2800px 0;
+  }
+}
+

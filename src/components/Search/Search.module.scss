@@ -1,0 +1,66 @@
+.SearchInput {
+  padding: 10px 20px 10px 60px;
+  min-width: 400px;
+  line-height: 40px;
+  font-size: 24px;
+  font-weight: 300;
+  font-family: Roboto, sans-serif;
+  margin: 20px 0;
+  outline: none;
+  transition: all 0.30s ease-in-out;
+  border: none;
+  &:focus {
+    box-shadow: 0px 0px 20px #aff3cd;
+  }
+}
+
+.FormField {
+  position: relative;
+  display: inline-block;
+}
+
+.InputIcon {
+  background: url('../../assets/icons/loupe.svg') no-repeat center center / 35px;
+  width: 50px;
+  height: 50px;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+}
+
+.InputCancel {
+  background: url('../../assets/icons/close-button.svg') no-repeat center center / 10px;
+  width: 20px;
+  height: 20px;
+  right: 15px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  background-color: gainsboro;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .SearchInput {
+    padding: 10px 20px 10px 40px;
+    min-width: 260px;
+    max-width: 90%;
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: Roboto, sans-serif;
+    margin: 20px auto;
+  }
+  .InputCancel {
+    right: 10px;
+  }
+  .InputIcon {
+    background: url('../../assets/icons/loupe.svg') no-repeat center center / 25px;
+    width: 28px;
+  }
+}

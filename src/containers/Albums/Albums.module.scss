@@ -1,0 +1,91 @@
+body, .LoaderWrapper {
+  background: #348F50; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #56B4D3, #348F50); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #56B4D3, #348F50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.SiteLogo {
+  background: url('../../assets/icons/site_logo.svg') no-repeat center center / 100%;
+  width: 100px;
+  height: 70px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 30px;
+  z-index: 2;
+  background-size: contain;
+}
+
+.MainTitle {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 100;
+  text-align: center;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.LoaderText {
+  font-size: 14px;
+  color: #fff;
+  bottom: -30px;
+  position: absolute;
+  width: 100px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.LoaderWrapper {
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.GifLoader {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  height: 50px;
+  width: 100px;
+  background: url('../../assets/img/nyan_setapp.gif') no-repeat center center / 100%;
+  z-index: 3;
+}
+
+.HeartWrapper {
+  width: 210px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 20px auto;
+  z-index: 0;
+}
+
+.FavHeartText {
+  color: #fff;
+  padding-right: 40px;
+}
+
+.FavHeart {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 10px;
+  background: url('../../assets/img/heart_sprite.png') no-repeat;
+  background-position: 0 0;
+  animation: fave-heart 1s steps(28);
+  transform: scale(0.7);
+  &:hover {
+    background-position: -2800px 0;
+    transition: background 1s steps(28);
+  }
+}
