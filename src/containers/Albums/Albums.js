@@ -30,7 +30,7 @@ class Albums extends Component {
             });
     }
 
-    filterAlbums = (keyword) => {
+    filterAlbums = keyword => {
         const keywordLowercase = keyword.toLowerCase();
         const searchArray = this.state.initialAlbums;
 
@@ -48,12 +48,14 @@ class Albums extends Component {
     };
 
     handleSearchCancel = () => {
-        this.setState({albums: this.state.initialAlbums});
-        this.setState({query: null});
-        this.setState({inputValue: ''});
+        this.setState({
+            albums: this.state.initialAlbums,
+            query: null,
+            inputValue: ''
+        });
     }
 
-    handleInputChange = (event) => {
+    handleInputChange = event => {
         this.setState({inputValue: event.target.value});
         this.setState({
             query: event.target.value
@@ -76,11 +78,6 @@ class Albums extends Component {
             </div>;
         }
         let albums = <p style={{textAlign: 'center'}}>There was an error during fetch of albums</p>;
-        if (this.state.albums) {
-            albums =
-                <p className="zonk" style={{textAlign: 'center'}}>We`re sorry :( there are no search results matching
-                    your keyword</p>;
-        }
         if (!this.state.error) {
             albums = this.state.albums.map(album => {
                 return <Album
@@ -95,6 +92,12 @@ class Albums extends Component {
                     loaderStatus={this.state.loaderVisible}
                 />;
             });
+            if (this.state.albums.length === 0) {
+                albums =
+                    <p className={styles.NoResults} style={{textAlign: 'center'}}>We`re sorry :( there are no search
+                        results matching
+                        your keyword.</p>;
+            }
         }
 
         return (

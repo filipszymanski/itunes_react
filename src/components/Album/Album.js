@@ -2,7 +2,7 @@ import React from 'react';
 import Popup from '../../components/Popup/Popup';
 import styles from './Album.module.scss';
 
-const album = (props) => (
+const album = props => (
 
     <div className="col-sm-12 col-md-6 col-lg-4">
         <article className={styles.Album} onClick={props.clicked}>

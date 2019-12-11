@@ -13,7 +13,7 @@ class CustomPopup extends Component {
         this.setState({loaderVisible: true})
         noScroll.on();
     }
-    closeModal = (event) => {
+    closeModal = () => {
         setTimeout(() => {
             noScroll.off();
         },200)

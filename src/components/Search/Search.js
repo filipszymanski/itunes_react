@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Search.module.scss';
 
-const search = (props) => (
+const search = props => (
     <div className="col-sm-12 text-center">
         <form>
             <div className={styles.FormField}>
@@ -14,7 +14,6 @@ const search = (props) => (
                 />
                 <span className={styles.InputCancel} onClick={props.searchcancel}></span>
             </div>
-
         </form>
     </div>
 )

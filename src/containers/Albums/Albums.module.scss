@@ -17,6 +17,15 @@ body, .LoaderWrapper {
   background-size: contain;
 }
 
+.NoResults {
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  font-size: 70px;
+  font-weight: 100;
+  padding: 20px;
+}
+
 .MainTitle {
   color: #fff;
   font-size: 40px;
@@ -89,3 +98,11 @@ body, .LoaderWrapper {
     transition: background 1s steps(28);
   }
 }
+
+@media (max-width: 575.98px) {
+  .NoResults {
+    font-size: 30px;
+  }
+}
+
+
