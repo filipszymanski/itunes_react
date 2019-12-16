@@ -69,6 +69,7 @@
     background: linear-gradient(to right, #6bc8e6, #43bd69);
     box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
     transition: opacity 0.3s ease-in-out;
+    opacity: 1;
     &:hover {
         opacity: 0.6;
     }

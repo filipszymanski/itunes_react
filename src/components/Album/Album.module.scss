@@ -34,3 +34,18 @@
     font-weight: bold;
 }
 
+.NoResults, .ErrorDuringFetch {
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    font-size: 70px;
+    font-weight: 100;
+    padding: 20px;
+  }
+  
+  @media (max-width: 575.98px) {
+    .NoResults, .ErrorDuringFetch {
+      font-size: 30px;
+    }
+  }
+
